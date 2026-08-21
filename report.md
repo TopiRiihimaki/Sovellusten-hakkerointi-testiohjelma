@@ -17,9 +17,13 @@ Docker Desktop, Ubuntu, GCC
 Mitä tein:
 
 Käynnistin työn dockerissa ubuntussa. Koska tässä ei ollut GCC valmiiski asenettuna, minun piti ajaa tämmöinen komento: apt install -y gcc. Tämän jälkeen laitoin tälläisen komennon: gcc test_code.c -o test_program, josta sain tälläisen: 
+
 -rwxrwxrwx 1 root root    94 Aug 20 11:42 README.md
+
 -rwxrwxrwx 1 root root    14 Aug 20 11:48 simpletext.md
+
 -rwxrwxrwx 1 root root    84 Aug 20 12:49 test_code.c
+
 -rwxr-xr-x 1 root root 15960 Aug 21 16:44 test_program
 
 Ajoin test_program tällä komennolla: ./test_program, josta sain: Hello, world!
@@ -29,7 +33,9 @@ file test_program komennon tulokset ja selitys lyhyesti:
 Koko oli noin 16KB
 
 ELF = tiedoston tyyppi (executable file)
+
 64-bit = Tehty 64-bittiselle 
+
 LSB = Least Significant Byte - tavujärjestys, jota tavalliset x86-64-tietokoneet käyttävät
 
 Lyhyt analyysi string test_program:stä
@@ -47,15 +53,21 @@ main() näkyy kirjaimena (T)
 readelf lyhyesti:
 
  Class:                             ELF64
+ 
  Data:                              2's complement, little endian
+ 
  Machine:                           Advanced Micro Devices X86-64
 
 Tekoälyn käyttö (ChatGPT):
 
 -Auttamaan käyttämään Dockeria
+
 -Antamaan oikeita komentoja, (file test_program, apt install -y gcc yms.)
+
 -Selittämään, mitä kaikki erilaiset komennot tekee ja mitä kaikkea kannattaa analysoida
+
 -Auttanut raportin suunnittelussa, mutta EI luonnissa
+
 -Tekoäly EI ole tehnyt koodia
 
 Lähteet:
