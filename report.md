@@ -79,7 +79,10 @@ Tekoälyn käyttö (ChatGPT):
 
 -Antamaan oikeita komentoja, (file test_program, apt install -y gcc yms.)
 
+
 -Selittämään, mitä kaikki erilaiset komennot tekee ja mitä kaikkea kannattaa analysoida
+
+-Selittämään käsitteitä
 
 -Auttanut raportin suunnittelussa, mutta EI luonnissa
 
