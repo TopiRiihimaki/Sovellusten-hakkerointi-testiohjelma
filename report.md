@@ -30,7 +30,8 @@ Ajoin test_program tällä komennolla: ./test_program, josta sain: Hello, world!
 
 file test_program komennon tulokset ja selitys lyhyesti:
 
-Koko oli noin 16KB
+<img width="1682" height="89" alt="image" src="https://github.com/user-attachments/assets/b4821633-0981-41bd-b22f-787f84c1a29d" />
+
 
 ELF = tiedoston tyyppi (executable file)
 
@@ -40,17 +41,31 @@ LSB = Least Significant Byte - tavujärjestys, jota tavalliset x86-64-tietokonee
 
 Lyhyt analyysi string test_program:stä
 
+<img width="680" height="589" alt="image" src="https://github.com/user-attachments/assets/b075a7e8-fa23-4864-9d19-0462f7599f21" />
+
+
+Tämä jatkuu vaikka kuinka pitkälle, mutta tässä pieni katkelma
+
 puts = ilmeisesti GCC arvioi, että se olisi tehokkaampaa laittaa puts, eikä printf, mikä oli itse koodissa
 
 ldd test_program lyhyesti:
+
+<img width="1101" height="114" alt="image" src="https://github.com/user-attachments/assets/88a21eb2-0a40-4e88-a6b4-77127becc96c" />
+
 
 Tarvitsee jaettua kirjastoa: libc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x00007edb3a407000)
 
 nm test_program lyhyesti:
 
+<img width="409" height="36" alt="image" src="https://github.com/user-attachments/assets/dfb90b27-a772-4fe8-bc7b-e3ae5f617518" />
+
+
 main() näkyy kirjaimena (T)
 
 readelf lyhyesti:
+
+<img width="1115" height="281" alt="image" src="https://github.com/user-attachments/assets/aba6abc9-0fec-4f4f-b035-f3965f2a65ab" />
+
 
  Class:                             ELF64
  
